@@ -13,7 +13,7 @@ const App = () => {
         <div className='studentInfo'>
           {/* TODO: answer here */}
           <h2 className="studentName">Denise Valeria Anggrek</h2>
-          <p className='="studentId'>2535441</p>
+          <p className="studentId">2535441</p>
         </div>
         <Link to='/'>Home</Link>
         <Link to='/photos'>My Photos</Link>
