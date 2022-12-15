@@ -12,7 +12,7 @@ const AddPhoto = () => {
 		e.preventDefault();
 		// TODO: answer here
 		try {
-			await fetch("http://localhost:3001/photos", {
+			await fetch("https://gallery-app-server.vercel.app/photos/", {
 				method: "POST",
 				body: JSON.stringify({
 					imageUrl: imageUrl,

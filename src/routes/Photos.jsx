@@ -13,7 +13,7 @@ const Photos = () => {
 	const deletePhoto = async (id) => {
 		// TODO: answer here
 		try {
-			await fetch(`http://localhost:3001/photos/${id}`, {
+			await fetch(`https://gallery-app-server.vercel.app/photos/${id}`, {
 				method: "DELETE",
 			}).then(async (res) => {
 				if (res.status === 404) {
@@ -33,7 +33,7 @@ const Photos = () => {
 		// TODO: answer here
 		const getPhotos = async (sortData, searchData) => {
 			try {
-				let url = "http://localhost:3001/photos";
+				let url = "https://gallery-app-server.vercel.app/photos/";
 				if (!submited) {
 					url = `${url}?_sort=id&_order=${sortData}`;
 				} else {
@@ -58,7 +58,7 @@ const Photos = () => {
 		// TODO: answer here
 		const getPhotos = async () => {
 			try {
-				const response = await fetch("http://localhost:3001/photos").then(
+				const response = await fetch("https://gallery-app-server.vercel.app/photos/").then(
 					(res) => res.json()
 				);
 

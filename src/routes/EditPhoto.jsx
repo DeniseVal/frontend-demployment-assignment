@@ -14,7 +14,7 @@ const EditPhoto = () => {
 		e.preventDefault();
 		// TODO: answer here
 		try {
-			await fetch(`http://localhost:3001/photos/${id}`, {
+			await fetch(`https://gallery-app-server.vercel.app/photos/${id}`, {
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -42,7 +42,7 @@ const EditPhoto = () => {
 		// TODO: answer here
 		const getPhoto = async (id) => {
 			try {
-				const response = await fetch(`http://localhost:3001/photos/${id}`).then(
+				const response = await fetch(`https://gallery-app-server.vercel.app/photos/${id}`).then(
 					(res) => res.json()
 				);
 
